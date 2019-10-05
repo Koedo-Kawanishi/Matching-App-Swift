@@ -24,7 +24,8 @@ carthage update --platform iOS
 ## Installing
 
 ### Carthage
-- 
+- RxSwift
+- RxCocoa
 
 ### Pods
 - 
