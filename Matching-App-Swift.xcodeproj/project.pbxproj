@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		F3A29E3B2347AC34006E83B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3A2347AC34006E83B1 /* AppDelegate.swift */; };
 		F3A29E3D2347AC34006E83B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3C2347AC34006E83B1 /* SceneDelegate.swift */; };
-		F3A29E3F2347AC34006E83B1 /* TopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3E2347AC34006E83B1 /* TopVC.swift */; };
-		F3A29E422347AC34006E83B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A29E402347AC34006E83B1 /* Main.storyboard */; };
+		F3A29E3F2347AC34006E83B1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3E2347AC34006E83B1 /* MainVC.swift */; };
 		F3A29E452347AC34006E83B1 /* Matching_App_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E432347AC34006E83B1 /* Matching_App_Swift.xcdatamodeld */; };
 		F3A29E472347AC36006E83B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A29E462347AC36006E83B1 /* Assets.xcassets */; };
 		F3A29E4A2347AC36006E83B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A29E482347AC36006E83B1 /* LaunchScreen.storyboard */; };
@@ -21,6 +20,17 @@
 		F3A29E862348DDEA006E83B1 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29E812348DDEA006E83B1 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3A29E872348DDEA006E83B1 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29E822348DDEA006E83B1 /* RxRelay.framework */; };
 		F3A29E882348DDEA006E83B1 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29E822348DDEA006E83B1 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3A29E8B2348DF6A006E83B1 /* TurtorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E8A2348DF6A006E83B1 /* TurtorialVC.swift */; };
+		F3A29E8D2348DF7B006E83B1 /* LikeFaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E8C2348DF7B006E83B1 /* LikeFaceVC.swift */; };
+		F3A29E8F2348DF9C006E83B1 /* ProfileEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E8E2348DF9C006E83B1 /* ProfileEditVC.swift */; };
+		F3A29E912348DFAB006E83B1 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E902348DFAB006E83B1 /* HistoryVC.swift */; };
+		F3A29E932348DFBA006E83B1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E922348DFBA006E83B1 /* ProfileVC.swift */; };
+		F3A29E952348DFCF006E83B1 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E942348DFCF006E83B1 /* MessageVC.swift */; };
+		F3A29E972348DFE9006E83B1 /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E962348DFE9006E83B1 /* ReportVC.swift */; };
+		F3A29E992348E04C006E83B1 /* Turtorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A29E982348E04C006E83B1 /* Turtorial.storyboard */; };
+		F3A29E9C2348E1A7006E83B1 /* TurtorialFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E9B2348E1A7006E83B1 /* TurtorialFirstVC.swift */; };
+		F3A29E9E2348E8B4006E83B1 /* TurtorialSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E9D2348E8B4006E83B1 /* TurtorialSecondVC.swift */; };
+		F3A29EA02348E8D3006E83B1 /* TurotialThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E9F2348E8D3006E83B1 /* TurotialThirdVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,8 +53,7 @@
 		F3A29E372347AC34006E83B1 /* Matching-App-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matching-App-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A29E3A2347AC34006E83B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3A29E3C2347AC34006E83B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3A29E3E2347AC34006E83B1 /* TopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopVC.swift; sourceTree = "<group>"; };
-		F3A29E412347AC34006E83B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3A29E3E2347AC34006E83B1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F3A29E442347AC34006E83B1 /* Matching_App_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Matching_App_Swift.xcdatamodel; sourceTree = "<group>"; };
 		F3A29E462347AC36006E83B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A29E492347AC36006E83B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +62,17 @@
 		F3A29E802348DDEA006E83B1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		F3A29E812348DDEA006E83B1 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		F3A29E822348DDEA006E83B1 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		F3A29E8A2348DF6A006E83B1 /* TurtorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtorialVC.swift; sourceTree = "<group>"; };
+		F3A29E8C2348DF7B006E83B1 /* LikeFaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeFaceVC.swift; sourceTree = "<group>"; };
+		F3A29E8E2348DF9C006E83B1 /* ProfileEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditVC.swift; sourceTree = "<group>"; };
+		F3A29E902348DFAB006E83B1 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		F3A29E922348DFBA006E83B1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F3A29E942348DFCF006E83B1 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		F3A29E962348DFE9006E83B1 /* ReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVC.swift; sourceTree = "<group>"; };
+		F3A29E982348E04C006E83B1 /* Turtorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Turtorial.storyboard; sourceTree = "<group>"; };
+		F3A29E9B2348E1A7006E83B1 /* TurtorialFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtorialFirstVC.swift; sourceTree = "<group>"; };
+		F3A29E9D2348E8B4006E83B1 /* TurtorialSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtorialSecondVC.swift; sourceTree = "<group>"; };
+		F3A29E9F2348E8D3006E83B1 /* TurotialThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurotialThirdVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +116,6 @@
 				F3A29E532347CB41006E83B1 /* View */,
 				F3A29E542347CBBC006E83B1 /* Entity */,
 				F3A29E552347CBC4006E83B1 /* Utility */,
-				F3A29E402347AC34006E83B1 /* Main.storyboard */,
 				F3A29E462347AC36006E83B1 /* Assets.xcassets */,
 				F3A29E482347AC36006E83B1 /* LaunchScreen.storyboard */,
 				F3A29E4B2347AC36006E83B1 /* Info.plist */,
@@ -115,8 +134,15 @@
 		F3A29E522347CB34006E83B1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F3A29E3E2347AC34006E83B1 /* TopVC.swift */,
+				F3A29E9A2348E182006E83B1 /* TurtorialVC */,
+				F3A29E3E2347AC34006E83B1 /* MainVC.swift */,
 				F3A29E562347CC56006E83B1 /* FaceScanVC.swift */,
+				F3A29E8C2348DF7B006E83B1 /* LikeFaceVC.swift */,
+				F3A29E922348DFBA006E83B1 /* ProfileVC.swift */,
+				F3A29E8E2348DF9C006E83B1 /* ProfileEditVC.swift */,
+				F3A29E902348DFAB006E83B1 /* HistoryVC.swift */,
+				F3A29E942348DFCF006E83B1 /* MessageVC.swift */,
+				F3A29E962348DFE9006E83B1 /* ReportVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -124,6 +150,7 @@
 		F3A29E532347CB41006E83B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F3A29E982348E04C006E83B1 /* Turtorial.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +177,17 @@
 				F3A29E802348DDEA006E83B1 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3A29E9A2348E182006E83B1 /* TurtorialVC */ = {
+			isa = PBXGroup;
+			children = (
+				F3A29E8A2348DF6A006E83B1 /* TurtorialVC.swift */,
+				F3A29E9B2348E1A7006E83B1 /* TurtorialFirstVC.swift */,
+				F3A29E9D2348E8B4006E83B1 /* TurtorialSecondVC.swift */,
+				F3A29E9F2348E8D3006E83B1 /* TurotialThirdVC.swift */,
+			);
+			path = TurtorialVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A29E4A2347AC36006E83B1 /* LaunchScreen.storyboard in Resources */,
+				F3A29E992348E04C006E83B1 /* Turtorial.storyboard in Resources */,
 				F3A29E472347AC36006E83B1 /* Assets.xcassets in Resources */,
-				F3A29E422347AC34006E83B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,25 +285,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3A29E3F2347AC34006E83B1 /* TopVC.swift in Sources */,
+				F3A29E932348DFBA006E83B1 /* ProfileVC.swift in Sources */,
+				F3A29E9E2348E8B4006E83B1 /* TurtorialSecondVC.swift in Sources */,
+				F3A29E3F2347AC34006E83B1 /* MainVC.swift in Sources */,
 				F3A29E3B2347AC34006E83B1 /* AppDelegate.swift in Sources */,
 				F3A29E572347CC56006E83B1 /* FaceScanVC.swift in Sources */,
 				F3A29E452347AC34006E83B1 /* Matching_App_Swift.xcdatamodeld in Sources */,
 				F3A29E3D2347AC34006E83B1 /* SceneDelegate.swift in Sources */,
+				F3A29E8D2348DF7B006E83B1 /* LikeFaceVC.swift in Sources */,
+				F3A29E8F2348DF9C006E83B1 /* ProfileEditVC.swift in Sources */,
+				F3A29E912348DFAB006E83B1 /* HistoryVC.swift in Sources */,
+				F3A29EA02348E8D3006E83B1 /* TurotialThirdVC.swift in Sources */,
+				F3A29E9C2348E1A7006E83B1 /* TurtorialFirstVC.swift in Sources */,
+				F3A29E952348DFCF006E83B1 /* MessageVC.swift in Sources */,
+				F3A29E972348DFE9006E83B1 /* ReportVC.swift in Sources */,
+				F3A29E8B2348DF6A006E83B1 /* TurtorialVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3A29E402347AC34006E83B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3A29E412347AC34006E83B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F3A29E482347AC36006E83B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

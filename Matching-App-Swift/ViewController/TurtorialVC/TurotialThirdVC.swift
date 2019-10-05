@@ -1,13 +1,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class TurtorialThirdVC: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    
-
 }
-
