@@ -31,6 +31,9 @@
 		F3A29E9C2348E1A7006E83B1 /* TurtorialFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E9B2348E1A7006E83B1 /* TurtorialFirstVC.swift */; };
 		F3A29E9E2348E8B4006E83B1 /* TurtorialSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E9D2348E8B4006E83B1 /* TurtorialSecondVC.swift */; };
 		F3A29EA02348E8D3006E83B1 /* TurotialThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E9F2348E8D3006E83B1 /* TurotialThirdVC.swift */; };
+		F3A29EA223494ED0006E83B1 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29EA123494ED0006E83B1 /* Lottie.framework */; };
+		F3A29EA323494ED0006E83B1 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29EA123494ED0006E83B1 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3A29EA523494F7D006E83B1 /* FaceAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A29EA423494F7D006E83B1 /* FaceAnimation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +44,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F3A29E862348DDEA006E83B1 /* RxCocoa.framework in Embed Frameworks */,
+				F3A29EA323494ED0006E83B1 /* Lottie.framework in Embed Frameworks */,
 				F3A29E842348DDEA006E83B1 /* RxSwift.framework in Embed Frameworks */,
 				F3A29E882348DDEA006E83B1 /* RxRelay.framework in Embed Frameworks */,
 			);
@@ -73,6 +77,8 @@
 		F3A29E9B2348E1A7006E83B1 /* TurtorialFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtorialFirstVC.swift; sourceTree = "<group>"; };
 		F3A29E9D2348E8B4006E83B1 /* TurtorialSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtorialSecondVC.swift; sourceTree = "<group>"; };
 		F3A29E9F2348E8D3006E83B1 /* TurotialThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurotialThirdVC.swift; sourceTree = "<group>"; };
+		F3A29EA123494ED0006E83B1 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		F3A29EA423494F7D006E83B1 /* FaceAnimation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = FaceAnimation.json; path = "Matching-App-Swift/Resource/Animations/FaceAnimation.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A29E852348DDEA006E83B1 /* RxCocoa.framework in Frameworks */,
+				F3A29EA223494ED0006E83B1 /* Lottie.framework in Frameworks */,
 				F3A29E832348DDEA006E83B1 /* RxSwift.framework in Frameworks */,
 				F3A29E872348DDEA006E83B1 /* RxRelay.framework in Frameworks */,
 			);
@@ -92,6 +99,7 @@
 		F3A29E2E2347AC34006E83B1 = {
 			isa = PBXGroup;
 			children = (
+				F3A29EA423494F7D006E83B1 /* FaceAnimation.json */,
 				F3A29E392347AC34006E83B1 /* Matching-App-Swift */,
 				F3A29E382347AC34006E83B1 /* Products */,
 				F3A29E7F2348DDEA006E83B1 /* Frameworks */,
@@ -172,6 +180,7 @@
 		F3A29E7F2348DDEA006E83B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3A29EA123494ED0006E83B1 /* Lottie.framework */,
 				F3A29E812348DDEA006E83B1 /* RxCocoa.framework */,
 				F3A29E822348DDEA006E83B1 /* RxRelay.framework */,
 				F3A29E802348DDEA006E83B1 /* RxSwift.framework */,
@@ -250,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A29EA523494F7D006E83B1 /* FaceAnimation.json in Resources */,
 				F3A29E4A2347AC36006E83B1 /* LaunchScreen.storyboard in Resources */,
 				F3A29E992348E04C006E83B1 /* Turtorial.storyboard in Resources */,
 				F3A29E472347AC36006E83B1 /* Assets.xcassets in Resources */,
@@ -269,6 +279,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
 			);
 			outputFileListPaths = (
 			);
