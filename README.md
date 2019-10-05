@@ -31,7 +31,7 @@ carthage update --platform iOS
 
 ## Emoji-Prefix
 |Type|Emoji|
-|---|---|
+|---|:---:|
 |初めてのコミット（Initial Commit）|	🎉|
 |バージョンタグ（Version Tag）|	🔖|
 |新機能（New Feature）|	✨|
