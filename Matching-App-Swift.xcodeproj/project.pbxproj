@@ -177,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				F3A29E9A2348E182006E83B1 /* Turtorial */,
+				F3A29EB023496C9A006E83B1 /* Message */,
 				F3A29E3E2347AC34006E83B1 /* MainVC.swift */,
 				F3A29E562347CC56006E83B1 /* FaceScanVC.swift */,
 				F3A29E8C2348DF7B006E83B1 /* LikeFaceVC.swift */,
@@ -240,7 +241,6 @@
 				F3A29E9B2348E1A7006E83B1 /* TurtorialFirstVC.swift */,
 				F3A29E9D2348E8B4006E83B1 /* TurtorialSecondVC.swift */,
 				F3A29E9F2348E8D3006E83B1 /* TurotialThirdVC.swift */,
-				F3A29EB023496C9A006E83B1 /* Message */,
 			);
 			path = Turtorial;
 			sourceTree = "<group>";
