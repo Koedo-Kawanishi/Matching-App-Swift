@@ -16,27 +16,31 @@ class MessageVC: MessagesViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configreView()
+    }
+    
+    func configreView(){
+        
         DispatchQueue.main.async {
             // messageListにメッセージの配列をいれて
             self.messageList = self.getMessages()
             // messagesCollectionViewをリロードして
             self.messagesCollectionView.reloadData()
             // 一番下までスクロールする
-            self.messagesCollectionView.scrollToBottom()
+            self.scrollToBottom()
         }
-
+        
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
         messagesCollectionView.messagesDisplayDelegate = self
         messagesCollectionView.messageCellDelegate = self
-
+        
         messageInputBar.delegate = self
         messageInputBar.sendButton.tintColor = UIColor.lightGray
-
+        
         // メッセージ入力時に一番下までスクロール
-//        scrollViewShouldScrollToTop?(.ke)
-//        scrollsToBottomOnKeybordBeginsEditing = true // default false
+        //        scrollViewShouldScrollToTop?(.ke)
+        //        scrollsToBottomOnKeybordBeginsEditing = true // default false
         maintainPositionOnKeyboardFrameChanged = true // default false
     }
 
@@ -55,8 +59,12 @@ class MessageVC: MessagesViewController {
             createMessage(text: "こ"),
             createMessage(text: "さ"),
             createMessage(text: "し"),
-            createMessage(text: "すせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん"),
+            createMessage(text: "すせそたちつてと"),
         ]
+    }
+    
+    func scrollToBottom(){
+        self.messagesCollectionView.scrollToBottom()
     }
 
     func createMessage(text: String) -> MockMessage {

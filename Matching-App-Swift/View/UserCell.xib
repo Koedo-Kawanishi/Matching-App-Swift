@@ -83,9 +83,6 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="gVA-Ay-qfu"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

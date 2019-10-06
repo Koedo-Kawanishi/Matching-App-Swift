@@ -54,6 +54,7 @@
 		F3A29ED123497D0C006E83B1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED023497D0C006E83B1 /* MainVC.swift */; };
 		F3A29ED323497D70006E83B1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED223497D70006E83B1 /* UserCell.swift */; };
 		F3A29ED5234983AF006E83B1 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED4234983AF006E83B1 /* MainTabVC.swift */; };
+		F3A29ED72349FCC8006E83B1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED62349FCC8006E83B1 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,6 +120,7 @@
 		F3A29ED023497D0C006E83B1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F3A29ED223497D70006E83B1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		F3A29ED4234983AF006E83B1 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
+		F3A29ED62349FCC8006E83B1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				F3A29EBA23496E3A006E83B1 /* IBDesignableTableView.swift */,
 				F3A29EB823496E3A006E83B1 /* IBDesignableView.swift */,
 				F3A29EBF23496E55006E83B1 /* IDDesignableImageView.swift */,
+				F3A29ED62349FCC8006E83B1 /* UIViewController+Extension.swift */,
 				F3A29EC7234971C3006E83B1 /* UITableView+Extension.swift */,
 				F3A29EC32349710D006E83B1 /* UICollectionCell+Extension.swift */,
 				F3A29EC523497120006E83B1 /* NSObject+Extension.swift */,
@@ -380,6 +383,7 @@
 				F3A29E932348DFBA006E83B1 /* ProfileVC.swift in Sources */,
 				F3A29EBC23496E3A006E83B1 /* IBDesignableView.swift in Sources */,
 				F3A29E9E2348E8B4006E83B1 /* TurtorialSecondVC.swift in Sources */,
+				F3A29ED72349FCC8006E83B1 /* UIViewController+Extension.swift in Sources */,
 				F3A29E3F2347AC34006E83B1 /* MainNavVC.swift in Sources */,
 				F3A29ED323497D70006E83B1 /* UserCell.swift in Sources */,
 				F3A29E3B2347AC34006E83B1 /* AppDelegate.swift in Sources */,
