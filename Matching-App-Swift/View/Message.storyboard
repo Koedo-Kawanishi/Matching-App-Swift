@@ -10,7 +10,7 @@
         <!--MessageVC-->
         <scene sceneID="z1n-mH-TPi">
             <objects>
-                <viewController id="fEC-H3-NdK" customClass="MessageVC" customModule="Matching_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessageVC" id="fEC-H3-NdK" customClass="MessageVC" customModule="Matching_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9yN-aa-a8A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

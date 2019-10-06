@@ -85,6 +85,7 @@
                     <constraint firstItem="sQt-Tx-kZO" firstAttribute="leading" secondItem="nGR-2G-aRM" secondAttribute="trailing" constant="20" id="rGT-YT-bO8"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <point key="canvasLocation" x="8.6956521739130448" y="-61.607142857142854"/>
         </tableViewCell>
     </objects>
