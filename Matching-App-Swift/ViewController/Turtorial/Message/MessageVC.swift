@@ -175,7 +175,6 @@ extension MessageVC: MessageInputBarDelegate {
     // メッセージ送信ボタンをタップした時の挙動
     // FIXME: 反応しない
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
-        print("ああああ")
         for component in inputBar.inputTextView.components {
             if let image = component as? UIImage {
 

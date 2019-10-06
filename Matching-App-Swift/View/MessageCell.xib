@@ -18,8 +18,9 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGR-2G-aRM" customClass="IBDesignableView" customModule="Matching_App_Swift" customModuleProvider="target">
                         <rect key="frame" x="10" y="10" width="104" height="104"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d4x-Bb-QXN">
-                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="d4x-Bb-QXN">
+                                <rect key="frame" x="0.0" y="1.5" width="104" height="101.5"/>
+                                <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -87,4 +88,7 @@
             <point key="canvasLocation" x="8.6956521739130448" y="-61.607142857142854"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
