@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5CZ-wb-DvB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main NavVC-->
+        <scene sceneID="oRe-my-I3n">
+            <objects>
+                <navigationController id="5CZ-wb-DvB" customClass="MainNavVC" customModule="Matching_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hl5-ea-Il5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.3529411764705882" green="0.78431372549019607" blue="0.98039215686274506" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fZQ-gt-vKs" kind="relationship" relationship="rootViewController" id="QMw-ic-bwC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBg-aA-LOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-461" y="165"/>
+        </scene>
+        <!--マイプロフィール-->
+        <scene sceneID="vmC-Ta-q9A">
+            <objects>
+                <viewController id="pEg-Vo-33M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vpb-nP-UgS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6DV-5k-g4m"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="マイプロフィール" image="tag.circle.fill" catalog="system" selectedImage="tag.circle.fill" id="pwK-tb-vHF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0eM-9a-MrK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="875"/>
+        </scene>
+        <!--あなたにオススメの人-->
+        <scene sceneID="c0t-zL-Doe">
+            <objects>
+                <viewController title="あなたにオススメの人" id="8xz-Qi-Luc" customClass="MainVC" customModule="Matching_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UUB-Vu-GIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="ZFF-Jd-cUC">
+                                <rect key="frame" x="0.0" y="426" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </textAttributes>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3eZ-rZ-8m3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GgK-QT-FEW">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vcd-CL-HbL">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tzS-hI-bbb">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3eZ-rZ-8m3" secondAttribute="bottom" id="8YB-5a-Gop"/>
+                            <constraint firstItem="3eZ-rZ-8m3" firstAttribute="leading" secondItem="UUB-Vu-GIQ" secondAttribute="leading" id="Itw-Cc-U2g"/>
+                            <constraint firstItem="3eZ-rZ-8m3" firstAttribute="top" secondItem="UUB-Vu-GIQ" secondAttribute="top" id="XfX-LF-E0Q"/>
+                            <constraint firstItem="dXk-MO-3io" firstAttribute="trailing" secondItem="3eZ-rZ-8m3" secondAttribute="trailing" id="fDq-I1-afF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dXk-MO-3io"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="みつける" image="person.3.fill" catalog="system" selectedImage="person.3.fill" id="jQH-Wx-Zyi"/>
+                    <navigationItem key="navigationItem" title="あなたにおすすめの人" id="aR2-or-keM"/>
+                    <connections>
+                        <outlet property="userCollectionV" destination="3eZ-rZ-8m3" id="oVQ-KT-oin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9We-Dg-YG9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="あ" id="6ko-e3-e0K"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="-431"/>
+        </scene>
+        <!--Main TabVC-->
+        <scene sceneID="l9M-4V-TyX">
+            <objects>
+                <tabBarController id="fZQ-gt-vKs" customClass="MainTabVC" customModule="Matching_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eT6-K0-bjW"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WjP-eO-jtt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="0.20026220034246575" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8xz-Qi-Luc" kind="relationship" relationship="viewControllers" id="rPG-5J-ZY6"/>
+                        <segue destination="DFf-9g-eea" kind="relationship" relationship="viewControllers" id="rpe-fh-EDA"/>
+                        <segue destination="pEg-Vo-33M" kind="relationship" relationship="viewControllers" id="Jdt-BJ-8LF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6g-Ta-3aH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="165"/>
+        </scene>
+        <!--チャット-->
+        <scene sceneID="YzO-3j-3Ao">
+            <objects>
+                <viewController id="DFf-9g-eea" customClass="MessageListVC" customModule="Matching_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b7X-q8-aDV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lqc-mX-ftM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lqc-mX-ftM" firstAttribute="top" secondItem="0qb-ay-pW0" secondAttribute="top" id="Mb2-YU-9gn"/>
+                            <constraint firstItem="lqc-mX-ftM" firstAttribute="leading" secondItem="0qb-ay-pW0" secondAttribute="leading" id="Pfu-6W-Oag"/>
+                            <constraint firstItem="0qb-ay-pW0" firstAttribute="trailing" secondItem="lqc-mX-ftM" secondAttribute="trailing" id="s4g-e8-K2H"/>
+                            <constraint firstItem="0qb-ay-pW0" firstAttribute="bottom" secondItem="lqc-mX-ftM" secondAttribute="bottom" id="vHC-at-Qsg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0qb-ay-pW0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="チャット" image="message.fill" catalog="system" selectedImage="message.fill" id="feU-dg-3f8"/>
+                    <connections>
+                        <outlet property="messageTableV" destination="lqc-mX-ftM" id="BjD-WO-ER6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUK-l0-Qh0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="217"/>
+        </scene>
+        <!--MessageVC-->
+        <scene sceneID="25z-gJ-dbi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKy-Gi-FT0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="MessageVC" id="mQm-qu-F6D" customClass="MessageVC" customModule="Matching_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pt7-1F-vRr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RxH-7h-Gm5"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1986" y="217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="message.fill" catalog="system" width="64" height="58"/>
+        <image name="person.3.fill" catalog="system" width="72" height="35"/>
+        <image name="tag.circle.fill" catalog="system" width="64" height="62"/>
+    </resources>
+</document>

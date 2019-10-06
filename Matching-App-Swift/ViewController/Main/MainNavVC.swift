@@ -2,14 +2,11 @@
 import UIKit
 import RxSwift
 
-class MainVC: UIViewController {
+class MainNavVC: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
-    
 
 }
 

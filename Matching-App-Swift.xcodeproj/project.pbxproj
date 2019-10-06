@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F3A29E3B2347AC34006E83B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3A2347AC34006E83B1 /* AppDelegate.swift */; };
 		F3A29E3D2347AC34006E83B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3C2347AC34006E83B1 /* SceneDelegate.swift */; };
-		F3A29E3F2347AC34006E83B1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3E2347AC34006E83B1 /* MainVC.swift */; };
+		F3A29E3F2347AC34006E83B1 /* MainNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3E2347AC34006E83B1 /* MainNavVC.swift */; };
 		F3A29E452347AC34006E83B1 /* Matching_App_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E432347AC34006E83B1 /* Matching_App_Swift.xcdatamodeld */; };
 		F3A29E472347AC36006E83B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A29E462347AC36006E83B1 /* Assets.xcassets */; };
 		F3A29E4A2347AC36006E83B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A29E482347AC36006E83B1 /* LaunchScreen.storyboard */; };
@@ -34,7 +34,6 @@
 		F3A29EA223494ED0006E83B1 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29EA123494ED0006E83B1 /* Lottie.framework */; };
 		F3A29EA323494ED0006E83B1 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29EA123494ED0006E83B1 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3A29EA523494F7D006E83B1 /* FaceAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A29EA423494F7D006E83B1 /* FaceAnimation.json */; };
-		F3A29EAA2349653E006E83B1 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A29EA92349653E006E83B1 /* Message.storyboard */; };
 		F3A29EAB23496971006E83B1 /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29EA6234964EA006E83B1 /* MessageKit.framework */; };
 		F3A29EAC23496971006E83B1 /* MessageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29EA6234964EA006E83B1 /* MessageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3A29EAE2349697F006E83B1 /* InputBarAccessoryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29EAD2349697F006E83B1 /* InputBarAccessoryView.framework */; };
@@ -50,6 +49,11 @@
 		F3A29EC42349710D006E83B1 /* UICollectionCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29EC32349710D006E83B1 /* UICollectionCell+Extension.swift */; };
 		F3A29EC623497120006E83B1 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29EC523497120006E83B1 /* NSObject+Extension.swift */; };
 		F3A29EC8234971C3006E83B1 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29EC7234971C3006E83B1 /* UITableView+Extension.swift */; };
+		F3A29ECD2349789B006E83B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A29ECC2349789B006E83B1 /* Main.storyboard */; };
+		F3A29ECF234979B7006E83B1 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A29ECE234979B7006E83B1 /* UserCell.xib */; };
+		F3A29ED123497D0C006E83B1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED023497D0C006E83B1 /* MainVC.swift */; };
+		F3A29ED323497D70006E83B1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED223497D70006E83B1 /* UserCell.swift */; };
+		F3A29ED5234983AF006E83B1 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED4234983AF006E83B1 /* MainTabVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,7 +79,7 @@
 		F3A29E372347AC34006E83B1 /* Matching-App-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matching-App-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A29E3A2347AC34006E83B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3A29E3C2347AC34006E83B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3A29E3E2347AC34006E83B1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F3A29E3E2347AC34006E83B1 /* MainNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavVC.swift; sourceTree = "<group>"; };
 		F3A29E442347AC34006E83B1 /* Matching_App_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Matching_App_Swift.xcdatamodel; sourceTree = "<group>"; };
 		F3A29E462347AC36006E83B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A29E492347AC36006E83B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +102,6 @@
 		F3A29EA123494ED0006E83B1 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		F3A29EA423494F7D006E83B1 /* FaceAnimation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = FaceAnimation.json; path = "Matching-App-Swift/Resource/Animations/FaceAnimation.json"; sourceTree = "<group>"; };
 		F3A29EA6234964EA006E83B1 /* MessageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageKit.framework; path = Carthage/Build/iOS/MessageKit.framework; sourceTree = "<group>"; };
-		F3A29EA92349653E006E83B1 /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		F3A29EAD2349697F006E83B1 /* InputBarAccessoryView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputBarAccessoryView.framework; path = Carthage/Build/iOS/InputBarAccessoryView.framework; sourceTree = "<group>"; };
 		F3A29EB123496CAF006E83B1 /* MessageListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVC.swift; sourceTree = "<group>"; };
 		F3A29EB523496DDA006E83B1 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
@@ -111,6 +114,11 @@
 		F3A29EC32349710D006E83B1 /* UICollectionCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionCell+Extension.swift"; sourceTree = "<group>"; };
 		F3A29EC523497120006E83B1 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		F3A29EC7234971C3006E83B1 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		F3A29ECC2349789B006E83B1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F3A29ECE234979B7006E83B1 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		F3A29ED023497D0C006E83B1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F3A29ED223497D70006E83B1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		F3A29ED4234983AF006E83B1 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,8 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				F3A29E9A2348E182006E83B1 /* Turtorial */,
+				F3A29EC923497865006E83B1 /* Main */,
 				F3A29EB023496C9A006E83B1 /* Message */,
-				F3A29E3E2347AC34006E83B1 /* MainVC.swift */,
 				F3A29E562347CC56006E83B1 /* FaceScanVC.swift */,
 				F3A29E8C2348DF7B006E83B1 /* LikeFaceVC.swift */,
 				F3A29E922348DFBA006E83B1 /* ProfileVC.swift */,
@@ -193,8 +201,9 @@
 			isa = PBXGroup;
 			children = (
 				F3A29E982348E04C006E83B1 /* Turtorial.storyboard */,
-				F3A29EA92349653E006E83B1 /* Message.storyboard */,
 				F3A29EB523496DDA006E83B1 /* MessageCell.xib */,
+				F3A29ECC2349789B006E83B1 /* Main.storyboard */,
+				F3A29ECE234979B7006E83B1 /* UserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,10 +258,21 @@
 			isa = PBXGroup;
 			children = (
 				F3A29EB123496CAF006E83B1 /* MessageListVC.swift */,
-				F3A29E942348DFCF006E83B1 /* MessageVC.swift */,
 				F3A29EC1234970B5006E83B1 /* MessageCell.swift */,
+				F3A29E942348DFCF006E83B1 /* MessageVC.swift */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		F3A29EC923497865006E83B1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F3A29E3E2347AC34006E83B1 /* MainNavVC.swift */,
+				F3A29ED4234983AF006E83B1 /* MainTabVC.swift */,
+				F3A29ED023497D0C006E83B1 /* MainVC.swift */,
+				F3A29ED223497D70006E83B1 /* UserCell.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A29ECD2349789B006E83B1 /* Main.storyboard in Resources */,
 				F3A29EA523494F7D006E83B1 /* FaceAnimation.json in Resources */,
 				F3A29EB623496DDA006E83B1 /* MessageCell.xib in Resources */,
 				F3A29E4A2347AC36006E83B1 /* LaunchScreen.storyboard in Resources */,
-				F3A29EAA2349653E006E83B1 /* Message.storyboard in Resources */,
+				F3A29ECF234979B7006E83B1 /* UserCell.xib in Resources */,
 				F3A29E992348E04C006E83B1 /* Turtorial.storyboard in Resources */,
 				F3A29E472347AC36006E83B1 /* Assets.xcassets in Resources */,
 			);
@@ -359,7 +380,8 @@
 				F3A29E932348DFBA006E83B1 /* ProfileVC.swift in Sources */,
 				F3A29EBC23496E3A006E83B1 /* IBDesignableView.swift in Sources */,
 				F3A29E9E2348E8B4006E83B1 /* TurtorialSecondVC.swift in Sources */,
-				F3A29E3F2347AC34006E83B1 /* MainVC.swift in Sources */,
+				F3A29E3F2347AC34006E83B1 /* MainNavVC.swift in Sources */,
+				F3A29ED323497D70006E83B1 /* UserCell.swift in Sources */,
 				F3A29E3B2347AC34006E83B1 /* AppDelegate.swift in Sources */,
 				F3A29E572347CC56006E83B1 /* FaceScanVC.swift in Sources */,
 				F3A29EBB23496E3A006E83B1 /* IBDesignableButton.swift in Sources */,
@@ -373,6 +395,7 @@
 				F3A29EC42349710D006E83B1 /* UICollectionCell+Extension.swift in Sources */,
 				F3A29EB223496CAF006E83B1 /* MessageListVC.swift in Sources */,
 				F3A29EC8234971C3006E83B1 /* UITableView+Extension.swift in Sources */,
+				F3A29ED5234983AF006E83B1 /* MainTabVC.swift in Sources */,
 				F3A29E8F2348DF9C006E83B1 /* ProfileEditVC.swift in Sources */,
 				F3A29E912348DFAB006E83B1 /* HistoryVC.swift in Sources */,
 				F3A29EA02348E8D3006E83B1 /* TurotialThirdVC.swift in Sources */,
@@ -380,6 +403,7 @@
 				F3A29E952348DFCF006E83B1 /* MessageVC.swift in Sources */,
 				F3A29E972348DFE9006E83B1 /* ReportVC.swift in Sources */,
 				F3A29E8B2348DF6A006E83B1 /* TurtorialVC.swift in Sources */,
+				F3A29ED123497D0C006E83B1 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
