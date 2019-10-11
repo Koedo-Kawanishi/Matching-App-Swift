@@ -55,6 +55,10 @@
 		F3A29ED323497D70006E83B1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED223497D70006E83B1 /* UserCell.swift */; };
 		F3A29ED5234983AF006E83B1 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED4234983AF006E83B1 /* MainTabVC.swift */; };
 		F3A29ED72349FCC8006E83B1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED62349FCC8006E83B1 /* UIViewController+Extension.swift */; };
+		F3A6323B2350327F0037488C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A6323A2350327F0037488C /* UserViewModel.swift */; };
+		F3A6323D235033510037488C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A6323C235033510037488C /* User.swift */; };
+		F3A6323F235034960037488C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A6323E235034960037488C /* Message.swift */; };
+		F3A632422350439D0037488C /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A632412350439D0037488C /* UserUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,6 +125,11 @@
 		F3A29ED223497D70006E83B1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		F3A29ED4234983AF006E83B1 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
 		F3A29ED62349FCC8006E83B1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F3A63239234F6F350037488C /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		F3A6323A2350327F0037488C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F3A6323C235033510037488C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F3A6323E235034960037488C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F3A632412350439D0037488C /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +174,7 @@
 				F3A29E3C2347AC34006E83B1 /* SceneDelegate.swift */,
 				F3A29E522347CB34006E83B1 /* ViewController */,
 				F3A29E512347CB24006E83B1 /* ViewModel */,
+				F3A632402350435A0037488C /* UseCase */,
 				F3A29E532347CB41006E83B1 /* View */,
 				F3A29E542347CBBC006E83B1 /* Entity */,
 				F3A29E552347CBC4006E83B1 /* Utility */,
@@ -179,6 +189,7 @@
 		F3A29E512347CB24006E83B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F3A6323A2350327F0037488C /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -213,6 +224,8 @@
 		F3A29E542347CBBC006E83B1 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				F3A6323C235033510037488C /* User.swift */,
+				F3A6323E235034960037488C /* Message.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -236,6 +249,7 @@
 		F3A29E7F2348DDEA006E83B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3A63239234F6F350037488C /* Alamofire.framework.dSYM */,
 				F3A29EAD2349697F006E83B1 /* InputBarAccessoryView.framework */,
 				F3A29EA6234964EA006E83B1 /* MessageKit.framework */,
 				F3A29EA123494ED0006E83B1 /* Lottie.framework */,
@@ -276,6 +290,14 @@
 				F3A29ED223497D70006E83B1 /* UserCell.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		F3A632402350435A0037488C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				F3A632412350439D0037488C /* UserUseCase.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +385,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MessageKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -383,6 +407,7 @@
 				F3A29E932348DFBA006E83B1 /* ProfileVC.swift in Sources */,
 				F3A29EBC23496E3A006E83B1 /* IBDesignableView.swift in Sources */,
 				F3A29E9E2348E8B4006E83B1 /* TurtorialSecondVC.swift in Sources */,
+				F3A6323D235033510037488C /* User.swift in Sources */,
 				F3A29ED72349FCC8006E83B1 /* UIViewController+Extension.swift in Sources */,
 				F3A29E3F2347AC34006E83B1 /* MainNavVC.swift in Sources */,
 				F3A29ED323497D70006E83B1 /* UserCell.swift in Sources */,
@@ -391,7 +416,9 @@
 				F3A29EBB23496E3A006E83B1 /* IBDesignableButton.swift in Sources */,
 				F3A29EBD23496E3A006E83B1 /* IBDesignableSegumentControl.swift in Sources */,
 				F3A29E452347AC34006E83B1 /* Matching_App_Swift.xcdatamodeld in Sources */,
+				F3A6323F235034960037488C /* Message.swift in Sources */,
 				F3A29E3D2347AC34006E83B1 /* SceneDelegate.swift in Sources */,
+				F3A6323B2350327F0037488C /* UserViewModel.swift in Sources */,
 				F3A29EC623497120006E83B1 /* NSObject+Extension.swift in Sources */,
 				F3A29EC2234970B5006E83B1 /* MessageCell.swift in Sources */,
 				F3A29EBE23496E3A006E83B1 /* IBDesignableTableView.swift in Sources */,
@@ -405,6 +432,7 @@
 				F3A29EA02348E8D3006E83B1 /* TurotialThirdVC.swift in Sources */,
 				F3A29E9C2348E1A7006E83B1 /* TurtorialFirstVC.swift in Sources */,
 				F3A29E952348DFCF006E83B1 /* MessageVC.swift in Sources */,
+				F3A632422350439D0037488C /* UserUseCase.swift in Sources */,
 				F3A29E972348DFE9006E83B1 /* ReportVC.swift in Sources */,
 				F3A29E8B2348DF6A006E83B1 /* TurtorialVC.swift in Sources */,
 				F3A29ED123497D0C006E83B1 /* MainVC.swift in Sources */,

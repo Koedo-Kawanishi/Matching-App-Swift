@@ -48,18 +48,7 @@ class MessageVC: MessagesViewController {
     func getMessages() -> [MockMessage] {
         return [
             createMessage(text: "あ"),
-            createMessage(text: "い"),
-            createMessage(text: "う"),
-            createMessage(text: "え"),
-            createMessage(text: "お"),
-            createMessage(text: "か"),
-            createMessage(text: "き"),
-            createMessage(text: "く"),
-            createMessage(text: "け"),
-            createMessage(text: "こ"),
-            createMessage(text: "さ"),
-            createMessage(text: "し"),
-            createMessage(text: "すせそたちつてと"),
+            createMessage(text: "い")
         ]
     }
     
@@ -182,6 +171,7 @@ extension MessageVC: MessageCellDelegate {
 extension MessageVC: MessageInputBarDelegate {
     // メッセージ送信ボタンをタップした時の挙動
     // FIXME: 反応しない
+    
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         for component in inputBar.inputTextView.components {
             if let image = component as? UIImage {
