@@ -32,20 +32,16 @@ class TurtorialPageVC: UIPageViewController {
     }
     
     func getSecond() -> TurtorialSecondVC! {
-        guard let storyboard = storyboard,
-        let secondVC = storyboard.instantiateViewController(withIdentifier: "TurtorialSecondVC") as? TurtorialSecondVC else {
+        guard let secondVC: TurtorialSecondVC = instanceFromStoryboard() else {
             return nil
         }
-        
         return secondVC
     }
     
     func getThird() -> TurtorialThirdVC! {
-        guard let storyboard = storyboard,
-        let thirdVC = storyboard.instantiateViewController(withIdentifier: "TurtorialThirdVC") as? TurtorialThirdVC else {
+        guard let thirdVC: TurtorialThirdVC = instanceFromStoryboard() else {
             return nil
         }
-        
         return thirdVC
     }
 
