@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import RxSwift
+
+final class UserUseCase {
+
+    let apiClient = ApiClient(API_BASE_URL)
+}
