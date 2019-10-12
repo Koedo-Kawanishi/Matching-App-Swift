@@ -12,4 +12,8 @@ import RxSwift
 final class UserUseCase {
 
     let apiClient = ApiClient(API_BASE_URL)
+
+    func fetchUsers(request: UsersRequest) -> Single<UsersResponse> {
+        return apiClient.get(path: API_USERS_PATH, request: request)
+    }
 }
