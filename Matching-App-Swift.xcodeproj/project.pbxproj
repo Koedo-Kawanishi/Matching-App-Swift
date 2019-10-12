@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B920A37A23517EFF0067A1C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B920A37923517EFF0067A1C7 /* SwiftyJSON.framework */; };
+		B920A37B23517EFF0067A1C7 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B920A37923517EFF0067A1C7 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3A29E3B2347AC34006E83B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3A2347AC34006E83B1 /* AppDelegate.swift */; };
 		F3A29E3D2347AC34006E83B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3C2347AC34006E83B1 /* SceneDelegate.swift */; };
 		F3A29E3F2347AC34006E83B1 /* MainNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3E2347AC34006E83B1 /* MainNavVC.swift */; };
@@ -72,6 +74,7 @@
 				F3A29EA323494ED0006E83B1 /* Lottie.framework in Embed Frameworks */,
 				F3A29E842348DDEA006E83B1 /* RxSwift.framework in Embed Frameworks */,
 				F3A29E882348DDEA006E83B1 /* RxRelay.framework in Embed Frameworks */,
+				B920A37B23517EFF0067A1C7 /* SwiftyJSON.framework in Embed Frameworks */,
 				F3A29EAC23496971006E83B1 /* MessageKit.framework in Embed Frameworks */,
 				F3A29EAF2349697F006E83B1 /* InputBarAccessoryView.framework in Embed Frameworks */,
 			);
@@ -81,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B920A37923517EFF0067A1C7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		F3A29E372347AC34006E83B1 /* Matching-App-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matching-App-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A29E3A2347AC34006E83B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3A29E3C2347AC34006E83B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				F3A29EA223494ED0006E83B1 /* Lottie.framework in Frameworks */,
 				F3A29E832348DDEA006E83B1 /* RxSwift.framework in Frameworks */,
 				F3A29E872348DDEA006E83B1 /* RxRelay.framework in Frameworks */,
+				B920A37A23517EFF0067A1C7 /* SwiftyJSON.framework in Frameworks */,
 				F3A29EAB23496971006E83B1 /* MessageKit.framework in Frameworks */,
 				F3A29EAE2349697F006E83B1 /* InputBarAccessoryView.framework in Frameworks */,
 			);
@@ -249,6 +254,7 @@
 		F3A29E7F2348DDEA006E83B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B920A37923517EFF0067A1C7 /* SwiftyJSON.framework */,
 				F3A63239234F6F350037488C /* Alamofire.framework.dSYM */,
 				F3A29EAD2349697F006E83B1 /* InputBarAccessoryView.framework */,
 				F3A29EA6234964EA006E83B1 /* MessageKit.framework */,
