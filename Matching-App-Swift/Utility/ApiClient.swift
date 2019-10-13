@@ -15,8 +15,10 @@ protocol ApiClientProtocol {
     init(_ baseUrl: String)
 
     func get<T: ResponseEntity>(path: String?,
+                                version: String,
                                 request: RequestEntity?) -> Single<T>
     func post<T: ResponseEntity>(path: String?,
+                                 version: String,
                                  request: RequestEntity?) -> Single<T>
 }
 
@@ -28,8 +30,9 @@ final class ApiClient: ApiClientProtocol {
     }
 
     func get<T: ResponseEntity>(path: String?,
+                                version: String = API_VER,
                                 request: RequestEntity?) -> Single<T> {
-        var requestUrl = baseUrl
+        var requestUrl = baseUrl + version
         if let path = path {
             requestUrl += path
         }
@@ -66,8 +69,9 @@ final class ApiClient: ApiClientProtocol {
     }
 
     func post<T: ResponseEntity>(path: String?,
+                                 version: String = API_VER,
                                  request: RequestEntity?) -> Single<T> {
-        var requestUrl = baseUrl
+        var requestUrl = baseUrl + version
         if let path = path {
             requestUrl += path
         }
