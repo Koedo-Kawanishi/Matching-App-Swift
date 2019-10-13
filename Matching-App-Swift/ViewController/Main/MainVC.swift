@@ -1,13 +1,20 @@
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class MainVC: UIViewController {
 
-    let userMaxCount: Int = 10
-    let columCount: Int = 2
+    private let userMaxCount: Int = 10
+    private let columCount: Int = 2
 
-    let lineSpace: CGFloat = 2.0
-    let interitemSpace: CGFloat = 2.0
+    private let lineSpace: CGFloat = 2.0
+    private let interitemSpace: CGFloat = 2.0
+
+    private let viewModel = MainViewModel()
+    private let disposeBag = DisposeBag()
+
+    private var usersList = [User]()
 
     @IBOutlet weak var userCollectionView: UICollectionView! {
         didSet {
@@ -27,6 +34,18 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        fetchUsers()
+    }
+
+
+    private func fetchUsers() {
+        viewModel.fetchUser(sex: .female)
+            .asDriver(onErrorRecover: { error in
+                return Driver.empty()
+            }).drive(onNext: { [weak self] response in
+                self?.usersList.append(contentsOf: response)
+                self?.userCollectionView.reloadData()
+            }).disposed(by: disposeBag)
     }
 
     private func setupCollectionView() {
@@ -41,11 +60,12 @@ extension MainVC: UICollectionViewDelegate {
 
 extension MainVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return userMaxCount
+        return usersList.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(with: UserCell.self, for: indexPath)
+        cell.setData(user: usersList[indexPath.row])
         return cell
     }
 }
