@@ -77,4 +77,22 @@ class UserUseCaseTests: XCTestCase {
 
         waitForExpectations(timeout: 10, handler: nil)
     }
+
+    /// 存在しない ID のユーザを指定し、エラーになるパターン
+    func testFetchUserWithFetchNotExistIdPattern() throws {
+        let expectation = self.expectation(description: "Fetch not exist user")
+        let request = UsersRequest(id: "1")
+        useCase.fetchUsers(request: request)
+            .subscribe(onSuccess: { _ in
+                XCTFail("API から 400 エラーではなく 200 で返ってきてしまっている")
+                expectation.fulfill()
+
+            }, onError: { error in
+                print(error.localizedDescription)
+                XCTAssertNotNil(error)
+                expectation.fulfill()
+            }).disposed(by: disposeBag)
+
+        waitForExpectations(timeout: 10, handler: nil)
+    }
 }
