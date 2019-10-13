@@ -217,6 +217,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9034E5A235361F000DDC124 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F3A29ED223497D70006E83B1 /* UserCell.swift */,
+				F3A29ECE234979B7006E83B1 /* UserCell.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B9034E5B235361F600DDC124 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				F3A29EC1234970B5006E83B1 /* MessageCell.swift */,
+				F3A29EB523496DDA006E83B1 /* MessageCell.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		B920A3862351B4B30067A1C7 /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,10 +337,8 @@
 		F3A29E532347CB41006E83B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3A29E982348E04C006E83B1 /* Turtorial.storyboard */,
-				F3A29EB523496DDA006E83B1 /* MessageCell.xib */,
-				F3A29ECC2349789B006E83B1 /* Main.storyboard */,
-				F3A29ECE234979B7006E83B1 /* UserCell.xib */,
+				B9034E5A235361F000DDC124 /* Main */,
+				B9034E5B235361F600DDC124 /* Message */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +398,7 @@
 				F3A29E9B2348E1A7006E83B1 /* TurtorialFirstVC.swift */,
 				F3A29E9D2348E8B4006E83B1 /* TurtorialSecondVC.swift */,
 				F3A29E9F2348E8D3006E83B1 /* TurotialThirdVC.swift */,
+				F3A29E982348E04C006E83B1 /* Turtorial.storyboard */,
 			);
 			path = Turtorial;
 			sourceTree = "<group>";
@@ -390,7 +407,6 @@
 			isa = PBXGroup;
 			children = (
 				F3A29EB123496CAF006E83B1 /* MessageListVC.swift */,
-				F3A29EC1234970B5006E83B1 /* MessageCell.swift */,
 				F3A29E942348DFCF006E83B1 /* MessageVC.swift */,
 			);
 			path = Message;
@@ -402,7 +418,7 @@
 				F3A29E3E2347AC34006E83B1 /* MainNavVC.swift */,
 				F3A29ED4234983AF006E83B1 /* MainTabVC.swift */,
 				F3A29ED023497D0C006E83B1 /* MainVC.swift */,
-				F3A29ED223497D70006E83B1 /* UserCell.swift */,
+				F3A29ECC2349789B006E83B1 /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
