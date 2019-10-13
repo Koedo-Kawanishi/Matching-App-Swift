@@ -13,7 +13,7 @@ struct UsersResponse: ResponseEntity {
     var users: [User]
 
     init(_ json: JSON) {
-        let array = json["result"].arrayValue
+        let array = json["results"].arrayValue
         self.users = array.map({ data -> User in
             return User(id: data["id"].intValue,
                         name: data["name"].stringValue,

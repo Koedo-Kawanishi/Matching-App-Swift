@@ -37,16 +37,16 @@ final class ApiClient: ApiClientProtocol {
             requestUrl += path
         }
 
-        var params = Parameters()
-        if let request = request {
-            params = request.parameterize()
+        if let request = request, !request.parameterize().isEmpty {
+            let params = setGetParameters(request.parameterize())
+            requestUrl += params
         }
 
         return Single<T>.create(subscribe: { single in
-            let manager = SessionManager.default
+            let manager = Session.default
             let request = manager.request(requestUrl,
                                           method: .get,
-                                          parameters: params,
+                                          parameters: nil,
                                           encoding: JSONEncoding.default,
                                           headers: nil)
                 .responseJSON(completionHandler: { response in
@@ -82,7 +82,7 @@ final class ApiClient: ApiClientProtocol {
         }
 
         return Single<T>.create(subscribe: { single in
-            let manager = SessionManager.default
+            let manager = Session.default
             let request = manager.request(requestUrl,
                                           method: .post,
                                           parameters: params,
@@ -105,5 +105,16 @@ final class ApiClient: ApiClientProtocol {
                 return request.cancel()
             }
         })
+    }
+
+
+    /// Swift5 〜の仕様変更で、GET リクエスト時に body にパラメータを入れるとエラーになってしまうため、文字列に変換する
+    /// - Parameter dict: [String: Any] 型で渡す.  !isEmpty の場合のみ実行すること
+    private func setGetParameters(_ dict: [String: Any]) -> String {
+        var params = "?"
+        for (key, value) in dict {
+            params += "\(key)=\(value)&"
+        }
+        return params
     }
 }
