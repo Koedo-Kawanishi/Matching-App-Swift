@@ -9,26 +9,29 @@ class MainVC: UIViewController {
     let lineSpace: CGFloat = 2.0
     let interitemSpace: CGFloat = 2.0
 
-    @IBOutlet weak var userCollectionV: UICollectionView! {
+    @IBOutlet weak var userCollectionView: UICollectionView! {
         didSet {
-            userCollectionV.delegate = self
-            userCollectionV.dataSource = self
-            userCollectionV.register(cellType: UserCell.self)
+            userCollectionView.delegate = self
+            userCollectionView.dataSource = self
+            userCollectionView.register(cellType: UserCell.self)
+            let flowLayout = UICollectionViewFlowLayout()
+            let margin: CGFloat = 3.0
+            flowLayout.itemSize = CGSize(width: 10.0, height: 10.0)
+            flowLayout.minimumInteritemSpacing = margin
+            flowLayout.minimumLineSpacing = margin
+            flowLayout.sectionInset = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
+            userCollectionView.setCollectionViewLayout(flowLayout, animated: true)
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupCollectionView()
+    }
 
-        let flowLayout = UICollectionViewFlowLayout()
-        let margin: CGFloat = 3.0
-        flowLayout.itemSize = CGSize(width: 10.0, height: 10.0)
-        flowLayout.minimumInteritemSpacing = margin
-        flowLayout.minimumLineSpacing = margin
-        flowLayout.sectionInset = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
-        userCollectionV.setCollectionViewLayout(flowLayout, animated: true)
-        userCollectionV.setNeedsLayout()
-        userCollectionV.reloadData()
+    private func setupCollectionView() {
+        userCollectionView.setNeedsLayout()
+        userCollectionView.reloadData()
     }
 }
 
@@ -54,8 +57,8 @@ extension MainVC: UICollectionViewDelegateFlowLayout {
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         let margin: CGFloat = 1.0
-        let width  = userCollectionV.bounds.width  / CGFloat(columCount) - (margin * CGFloat(columCount+1))
-        let height = userCollectionV.bounds.height / CGFloat(columCount) - (margin * CGFloat(columCount+1))
+        let width  = userCollectionView.bounds.width  / CGFloat(columCount) - (margin * CGFloat(columCount+1))
+        let height = userCollectionView.bounds.height / CGFloat(columCount) - (margin * CGFloat(columCount+1))
         let size = CGSize(width: width, height: height)
         return size
     }
