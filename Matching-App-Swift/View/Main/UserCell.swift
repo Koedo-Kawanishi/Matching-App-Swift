@@ -13,6 +13,6 @@ class UserCell: UICollectionViewCell {
 
     func setData(user: User) {
         nameLabel.text = user.name
-        nameLabel.text = String(user.age)
+        ageLabel.text = String(user.age)
     }
 }
