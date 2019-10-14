@@ -24,6 +24,7 @@
 		B920A3A72351D2A50067A1C7 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3A29E802348DDEA006E83B1 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B920A3B02352157A0067A1C7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B920A3A8235213E70067A1C7 /* Alamofire.framework */; };
 		B920A3B1235215880067A1C7 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B920A3A9235213E80067A1C7 /* AlamofireImage.framework */; };
+		B920A3BA2353498C0067A1C7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B920A3B92353498C0067A1C7 /* MainViewModel.swift */; };
 		F3A29E3B2347AC34006E83B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3A2347AC34006E83B1 /* AppDelegate.swift */; };
 		F3A29E3D2347AC34006E83B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3C2347AC34006E83B1 /* SceneDelegate.swift */; };
 		F3A29E3F2347AC34006E83B1 /* MainNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E3E2347AC34006E83B1 /* MainNavVC.swift */; };
@@ -72,7 +73,6 @@
 		F3A29ED323497D70006E83B1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED223497D70006E83B1 /* UserCell.swift */; };
 		F3A29ED5234983AF006E83B1 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED4234983AF006E83B1 /* MainTabVC.swift */; };
 		F3A29ED72349FCC8006E83B1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29ED62349FCC8006E83B1 /* UIViewController+Extension.swift */; };
-		F3A6323B2350327F0037488C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A6323A2350327F0037488C /* UserViewModel.swift */; };
 		F3A6323D235033510037488C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A6323C235033510037488C /* User.swift */; };
 		F3A6323F235034960037488C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A6323E235034960037488C /* Message.swift */; };
 		F3A632422350439D0037488C /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A632412350439D0037488C /* UserUseCase.swift */; };
@@ -136,6 +136,7 @@
 		B920A3A12351D1D40067A1C7 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		B920A3A8235213E70067A1C7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B920A3A9235213E80067A1C7 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		B920A3B92353498C0067A1C7 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F3A29E372347AC34006E83B1 /* Matching-App-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matching-App-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A29E3A2347AC34006E83B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3A29E3C2347AC34006E83B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,7 +182,6 @@
 		F3A29ED4234983AF006E83B1 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
 		F3A29ED62349FCC8006E83B1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F3A63239234F6F350037488C /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
-		F3A6323A2350327F0037488C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		F3A6323C235033510037488C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F3A6323E235034960037488C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F3A632412350439D0037488C /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
@@ -217,6 +217,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9034E5A235361F000DDC124 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F3A29ED223497D70006E83B1 /* UserCell.swift */,
+				F3A29ECE234979B7006E83B1 /* UserCell.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B9034E5B235361F600DDC124 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				F3A29EC1234970B5006E83B1 /* MessageCell.swift */,
+				F3A29EB523496DDA006E83B1 /* MessageCell.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		B920A3862351B4B30067A1C7 /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +261,14 @@
 				B920A39C2351D01D0067A1C7 /* Matching-App-SwiftTests-Bridging-Header.h */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B920A3BB23534C0E0067A1C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B920A3B92353498C0067A1C7 /* MainViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		F3A29E2E2347AC34006E83B1 = {
@@ -287,7 +313,7 @@
 		F3A29E512347CB24006E83B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F3A6323A2350327F0037488C /* UserViewModel.swift */,
+				B920A3BB23534C0E0067A1C7 /* Main */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -311,10 +337,8 @@
 		F3A29E532347CB41006E83B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3A29E982348E04C006E83B1 /* Turtorial.storyboard */,
-				F3A29EB523496DDA006E83B1 /* MessageCell.xib */,
-				F3A29ECC2349789B006E83B1 /* Main.storyboard */,
-				F3A29ECE234979B7006E83B1 /* UserCell.xib */,
+				B9034E5A235361F000DDC124 /* Main */,
+				B9034E5B235361F600DDC124 /* Message */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -374,6 +398,7 @@
 				F3A29E9B2348E1A7006E83B1 /* TurtorialFirstVC.swift */,
 				F3A29E9D2348E8B4006E83B1 /* TurtorialSecondVC.swift */,
 				F3A29E9F2348E8D3006E83B1 /* TurotialThirdVC.swift */,
+				F3A29E982348E04C006E83B1 /* Turtorial.storyboard */,
 			);
 			path = Turtorial;
 			sourceTree = "<group>";
@@ -382,7 +407,6 @@
 			isa = PBXGroup;
 			children = (
 				F3A29EB123496CAF006E83B1 /* MessageListVC.swift */,
-				F3A29EC1234970B5006E83B1 /* MessageCell.swift */,
 				F3A29E942348DFCF006E83B1 /* MessageVC.swift */,
 			);
 			path = Message;
@@ -394,7 +418,7 @@
 				F3A29E3E2347AC34006E83B1 /* MainNavVC.swift */,
 				F3A29ED4234983AF006E83B1 /* MainTabVC.swift */,
 				F3A29ED023497D0C006E83B1 /* MainVC.swift */,
-				F3A29ED223497D70006E83B1 /* UserCell.swift */,
+				F3A29ECC2349789B006E83B1 /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -555,6 +579,7 @@
 				F3A29EBC23496E3A006E83B1 /* IBDesignableView.swift in Sources */,
 				F3A29E9E2348E8B4006E83B1 /* TurtorialSecondVC.swift in Sources */,
 				F3A6323D235033510037488C /* User.swift in Sources */,
+				B920A3BA2353498C0067A1C7 /* MainViewModel.swift in Sources */,
 				F3A29ED72349FCC8006E83B1 /* UIViewController+Extension.swift in Sources */,
 				F3A29E3F2347AC34006E83B1 /* MainNavVC.swift in Sources */,
 				F3A29ED323497D70006E83B1 /* UserCell.swift in Sources */,
@@ -567,7 +592,6 @@
 				F3A29E452347AC34006E83B1 /* Matching_App_Swift.xcdatamodeld in Sources */,
 				F3A6323F235034960037488C /* Message.swift in Sources */,
 				F3A29E3D2347AC34006E83B1 /* SceneDelegate.swift in Sources */,
-				F3A6323B2350327F0037488C /* UserViewModel.swift in Sources */,
 				B920A37F235180260067A1C7 /* RequestEntity.swift in Sources */,
 				F3A29EC623497120006E83B1 /* NSObject+Extension.swift in Sources */,
 				F3A29EC2234970B5006E83B1 /* MessageCell.swift in Sources */,
