@@ -33,7 +33,9 @@ extension MessageListVC: UITableViewDataSource {
         // 選択した時のハイライトを消す
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "MessageVC") as! MessageVC
+        guard let nextVC: MessageVC = instanceFromStoryboard() else {
+            return
+        }
         present( nextVC, animated: true )
     }
     
