@@ -26,6 +26,8 @@ carthage update --platform iOS
 ### Carthage
 - RxSwift
 - RxCocoa
+- Lottie
+- MessageKit
 
 ### Pods
 - 
